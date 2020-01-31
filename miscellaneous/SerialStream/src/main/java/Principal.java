@@ -23,7 +23,8 @@ SOFTWARE.
  */
 
 import com.github.anastaciocintra.escpos.EscPos;
-import lib.SerialStream;
+import com.github.anastaciocintra.output.SerialStream;
+
 import java.io.IOException;
 
 

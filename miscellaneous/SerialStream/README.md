@@ -5,11 +5,16 @@ This sample show how to use escpos-coffee with serial port stream.
 
 It uses the jSerialComm dependency
 
-
-https://fazecast.github.io/jSerialComm/
-
 https://github.com/Fazecast/jSerialComm
 
+you need to include it in your pom:
+```xml
+<dependency>
+    <groupId>com.fazecast</groupId>
+    <artifactId>jSerialComm</artifactId>
+    <version>2.5.3</version>
+</dependency>
+```
 
 
 ##### 1. Edit Information about the port to be used on Principal.java
