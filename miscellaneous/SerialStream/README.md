@@ -5,7 +5,6 @@ This sample show how to use escpos-coffee with serial port stream.
 
 It uses the jSerialComm dependency
 
-https://github.com/Fazecast/jSerialComm
 
 you need to include it in your pom:
 ```xml
@@ -30,5 +29,14 @@ you need to include it in your pom:
 mvn clean package
 java -jar java -jar target\SerialStream-4.0.1-jar-with-dependencies.jar
 ```
+
+## Third Party
+All third party dependencies used by escpos-coffee library are compatible with MIT licence.
+Details of licenses on [3RD_PARTY_LICENCE](3RD_PARTY_LICENCE.md) 
+
+**List of dependencies:**
+
+https://github.com/Fazecast/jSerialComm (Apache 2.0 License)
+
 
 
