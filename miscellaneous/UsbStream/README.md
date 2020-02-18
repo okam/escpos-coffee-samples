@@ -8,23 +8,6 @@ http://usb4java.org/
 http://github.com/usb4java/usb4java
 
 
-##Read this before use
-For general or usual use, I recommend the use of escpos-coffee.PrinterOutputStream, 
-that runs properly on several platforms and access all the printers installed on your system.
-Or you can use escpos-coffee.TcpIpOutputStream for printers with ethernet interface. 
-
-The use of usb interface on java demand specific technical knowledge and is 
-out of scope of escpos-coffee library. 
-
-Because of that I'll not support issues from this project (Usb4JavaStream), 
-and im my humble opinion you should use Usb4JavaStream only from studies purpose.
-
-Why usb interface? 
-
-I think that its a seed of how to read information from the printer, in other words, 
-how to get online status information from the printer, it is because the Usb4Java have IN/OUT endpoints...
-But for now, it isn't implemented here...  
-
 
 ## Using on Linux
 ##### 1. Discover  vendorId,  productId,  interfaceNumber and  endpointAddress
@@ -89,7 +72,7 @@ Device Descriptor:
 ##### 2. Edit java file... 
 Create the instance of  Usb4JavaStream passing the params 
 ```java
-        Usb4JavaStream stream = new Usb4JavaStream((short) 0x04b8,(short)0x0e03, (byte) 0x00, (byte) 0x01);
+UsbStream stream = new UsbStream((short) 0x04b8,(short)0x0e03, (byte) 0x00, (byte) 0x01);
 ```
 
 ##### 3. compile and run

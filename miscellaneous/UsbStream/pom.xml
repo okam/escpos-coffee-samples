@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.anastaciocintra</groupId>
-    <artifactId>Usb4JavaStream</artifactId>
+    <artifactId>UsbStreamSample</artifactId>
     <version>${revision}</version>
 
     <packaging>jar</packaging>
@@ -67,7 +67,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>Usb4JavaEscPosCoffee</mainClass>
+                                    <mainClass>UsbStreamSample</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>

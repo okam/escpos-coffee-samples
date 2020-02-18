@@ -1,13 +1,13 @@
 import com.github.anastaciocintra.escpos.EscPos;
 import com.github.anastaciocintra.escpos.image.*;
-import lib.Usb4JavaStream;
+import com.github.anastaciocintra.output.UsbStream;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 
-public class Usb4JavaEscPosCoffee {
+public class UsbStreamSample {
 
     private URL getURL(String imageName){
         String strPath =  "images/" +  imageName;
@@ -16,9 +16,9 @@ public class Usb4JavaEscPosCoffee {
                 .getResource(strPath);
     }
     public void fnc1() throws IOException {
-        Usb4JavaStream stream = new Usb4JavaStream((short) 0x04b8,(short)0x0e03, (byte) 0x00, (byte) 0x01);
+        UsbStream stream = new UsbStream((short) 0x04b8,(short)0x0e03, (byte) 0x00, (byte) 0x01);
         EscPos escPos = new EscPos(stream);
-        escPos.writeLF("Hello Usb4Java")
+        escPos.writeLF("Hello UsbStream")
                 .writeLF("Another Line")
                 .feed(10);
 
@@ -36,7 +36,7 @@ public class Usb4JavaEscPosCoffee {
     }
 
     public static void main(String[] args) throws IOException {
-        Usb4JavaEscPosCoffee obj = new Usb4JavaEscPosCoffee();
+        UsbStreamSample obj = new UsbStreamSample();
         obj.fnc1();
     }
 }
