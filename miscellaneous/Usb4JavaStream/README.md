@@ -104,3 +104,6 @@ sudo java -jar  target/Usb4JavaStream-4.0.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
 
+## Third Party license
+Details of license on [3RD_PARTY_LICENSE](3RD_PARTY_LICENSE.md) 
+

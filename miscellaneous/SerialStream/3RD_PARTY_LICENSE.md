@@ -1,4 +1,4 @@
-# Licence of the dependency used by this project
+# License of the dependency used by this project
 
 
 ## Fazecast jSerialComm
