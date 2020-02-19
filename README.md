@@ -37,7 +37,7 @@ More specific usages of the escpos-coffee:
 * AndroidImage - How to print an image with Android Studio
 * SerialStream - How to use Serial Port   (com1, com2...) Stream
 * SerialStatus - How to get online status of the printer using Serial port I/O
-* Usb4JavaStream - How to use a usb port I/O 
+* UsbStream - How to use a usb port Stream 
 * UsbStatus - How to get on line status of the printer using usb port I/O 
 
 
